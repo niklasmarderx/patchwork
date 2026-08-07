@@ -21,7 +21,7 @@ path = "src/lib.rs"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
-colored = "2"
+colored = "3"
 thiserror = "2"
 similar = { version = "2", features = ["text"] }
 
