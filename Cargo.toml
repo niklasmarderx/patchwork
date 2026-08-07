@@ -1,0 +1,29 @@
+[package]
+name = "patchwork"
+version = "0.1.0"
+edition = "2021"
+authors = ["Niklas Marder"]
+description = "Understand and apply diffs — colored output, context-aware, built in Rust"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/niklasmarderx/patchwork"
+homepage = "https://github.com/niklasmarderx/patchwork"
+keywords = ["diff", "patch", "cli", "developer-tools", "git"]
+categories = ["command-line-utilities", "development-tools"]
+readme = "README.md"
+
+[[bin]]
+name = "patchwork"
+path = "src/main.rs"
+
+[lib]
+name = "patchwork"
+path = "src/lib.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+thiserror = "2"
+similar = { version = "2", features = ["text"] }
+
+[dev-dependencies]
+tempfile = "3"
