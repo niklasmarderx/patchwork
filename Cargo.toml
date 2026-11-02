@@ -23,7 +23,7 @@ path = "src/lib.rs"
 clap = { version = "4", features = ["derive"] }
 colored = "2"
 thiserror = "2"
-similar = { version = "2", features = ["text"] }
+similar = { version = "3", features = ["text"] }
 
 [dev-dependencies]
 tempfile = "3"
